@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Humanidad efímera</title>
+
+    <meta name="description"
+        content="Proyecto multimedia que integra contenido poético con animación en p5.js, video sintético generado por IA y diseño web responsivo para una experiencia inmersiva." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg?v=7" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Librerías de p5 -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+</head>
+
+<body>
+
+<!-- ============BUTTON MUSIC================ -->
+<button id="music-btn" class="music-btn">♪</button>
+
+<audio id="music" loop>
+    <source src="assets/music.mp3" type="audio/mp3">
+</audio>
+
+    <!-- ===================== TÍTULO ===================== -->
+<section class="pagina-titulo" id="pagina-titulo">
+
+  <!-- BOTÓN "i" -->
+  <button id="openModal" class="info-btn">i</button>
+
+  <div id="anim-titulo"></div>
+  <div id="titulo-wrapper" aria-hidden="false">
+    <h1 id="titulo-humanidad">
+      <a href="#historia">HUMANIDAD EFÍMERA</a>
+    </h1>
+    <div id="subtitulo-humanidad">
+    SUMÉRGETE EN LA HISTORIA <br>
+    Y DÉJATE LLEVAR POR EL VIENTO
+</div>
+  </div>
+
+  <!-- flecha scroll -->
+  <div class="scroll-down" aria-hidden="true"></div>
+</section>
+
+        
+ <div class="scroll-down"></div>
+    </section>
+
+    <!-- ===================== HISTORIA ===================== -->
+    <div class="scroll-container" id="historia">
+
+        <!-- PÁRRAFO 1 -->
+        <section class="section">
+            <video src="assets/uno.mp4" autoplay muted loop playsinline></video> 
+            
+            <div class="arriba">
+                Durante siglos, hombres y mujeres enunciaron sus secretos al vacío, <br />
+                donde nadie podía escucharlos. <br />
+                Durante siglos, no supieron expresar sus sentimientos, <br />
+                y estos brotaron como manantiales hacia el mundo que los rodeaba.
+            </div>
+
+            <div class="abajo">
+                Pero durante siglos, el mundo los escuchó y se impregnó de aquello que callaban. <br />
+                Porque no hay forma de esconderle al mundo los ecos de la verdad.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 2 -->
+        <section class="section">
+            <video src="assets/dos.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                En los confines del mundo, un ser sin cuerpo despierta y siente que el viento lo empuja hacia lugares olvidados. <br />
+                En una casa en ruinas escucha la risa de un niño; en una calle vacía, un grito ahogado; en una estación abandonada, una despedida que nunca tuvo respuesta.
+            </div>
+
+            <div class="abajo">
+                Sin darse cuenta, empieza a guardar todo eso dentro de sí. <br />
+                Cuando intenta entenderlo, el peso de tantos recuerdos humanos casi lo quiebra. <br />
+                La humanidad, descubre, no es algo que un ser hecho solo de viento debería atreverse a cargar.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 3 -->
+        <section class="section">
+            <video src="assets/tres.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                Entre las hojas altas de un pastizal infinito, el viento danza entre sus láminas. <br />
+                Una voz sin cuerpo tararea y se deja llevar.
+            </div>
+
+            <div class="abajo">
+                Suspendido sobre los árboles y arrastrado por el viento, llega a unas ruinas cubiertas de musgo. <br />
+                Al cruzar entre las piedras, algo lo detiene: un resto de emoción humana se le clava dentro, como si el lugar se negara a olvidar.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 4 -->
+        <section class="section">
+            <video src="assets/cuatro.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                Cuando lo deja entrar, el aire se vuelve cálido, casi vivo. <br />
+                Entonces escucha unas risas fugaces, seguidas por una frase que el tiempo dejó incompleta. <br />
+                El ser sin cuerpo se inclina, queriendo entender, sin saber que esa curiosidad empezará a cambiarlo.
+            </div>
+
+            <div class="abajo">
+                Una ráfaga de viento lo arrastra lejos del destello. <br />
+                En el aire, la luz que guardó empieza a unirse con él, como si buscara un sitio donde quedarse. <br />
+                Ya no es solo un suspiro. Empieza a tener un cuerpo que todavía no entiende.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 5 -->
+        <section class="section">
+            <video src="assets/cinco.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                El viento la lleva hasta una playa. <br />
+                La deposita entre las conchas, donde el aire 
+                vuelve a sentirse cálido, casi familiar. <br />
+                Por un instante reconoce esa sensación… pero esta se quiebra. Desde el mar llega un frío seco que la atraviesa.
+            </div>
+
+            <div class="abajo">
+                “Así que esto es el miedo”, murmura, mirando el oleaje avanzar y retroceder. <br />
+                Su silueta reacciona al temblor. La luz se aprieta, el viento se ordena, y su forma se condensa poco a poco hasta volverse la de una mujer hecha de niebla y recuerdo.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 6 -->
+        <section class="section">
+            <video src="assets/seis.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                Se adentra en el mar. <br />
+            </div>
+
+            <div class="abajo">
+                A su alrededor, emociones —algunas olvidadas— rozan su cuerpo nuevo mientras la corriente la recibe, la envuelve y la arrastra sin resistencia.<br />
+                Desciende entre sombras donde los colores laten como recuerdos breves, casi extintos, y esas emociones —unas que la buscan, otras que huyen— parecen saber que está hecha para guardarlas.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 7 -->
+        <section class="section">
+            <video src="assets/siete.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                Allí, la presión comienza a crecer; no del agua, sino de algo más antiguo.<br />
+                Un recuerdo hundido hasta estas profundidades despierta a su alrededor.
+            </div>
+
+            <div class="abajo">
+                Voces rotas, lloros, respiraciones entrecortadas… todo vibra como si el mar las hubiera guardado 
+                durante siglos.<br />
+                El miedo se vuelve peso; intenta ascender, pero la memoria la sujeta, empeñada en arrastrarla con ella.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 8 -->
+        <section class="section">
+            <video src="assets/ocho.mp4" autoplay muted loop playsinline></video>
+
+            <div class="abajo">
+                Emerge del mar y el viento la recoge una vez más; 
+                su forma, ahora más nítida y casi humana, avanza hasta un campo de flores que se mecen al compás del aire, donde siente el dolor vuelto suave, casi hermoso.<br />
+                Frente a ella aparece un orbe morado que late despacio; al tocarlo comprende qué es la pérdida: amar algo tanto que duele… y aun así tener que dejarlo ir.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 9 -->
+        <section class="section">
+            <video src="assets/nueve.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                Desesperada por lo que siente, corre sin rumbo, buscando dejar atrás cada emoción que la persigue. <br />
+                El bosque se vuelve más denso; los troncos se alzan como pilares de un templo antiguo.
+            </div>
+
+            <div class="abajo">
+                Entonces encuentra un claro. <br />
+                Un espacio pequeño, escondido, donde la luz apenas toca el suelo.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 10 -->
+        <section class="section">
+            <video src="assets/diez.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                En ese silencio, un recuerdo de familia llega a ella: 
+                suave, inesperado, como una mano que se posa en su espalda; 
+                no ves rostros ni lugares, solo la certeza de pertenecer a algo, 
+                un calor que llena los huecos que el miedo había dejado.<br />
+                Puede bajar los hombros, cerrar los ojos y permitirse, por un instante, que el mundo no la reclame. <br />
+                Ese pequeño recuerdo la sostiene… y le permite descansar. <br />
+                No todo lo que siente debe doler.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 11 -->
+        <section class="section">
+            <video src="assets/once.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                Decide caminar por su cuenta; 
+                ya no está siendo guiada. En la cima de la montaña, 
+                observa el pastizal donde todo comenzó.
+            </div>
+
+            <div class="abajo">
+                Es un recuerdo propio por primera vez: un simple alivio al reconocer que ya ha estado allí antes. <br />
+                Se pregunta si ese recuerdo también quedará en el mundo cuando ella ya no esté.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 12 -->
+        <section class="section">
+            <video src="assets/doce.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                Decide bajar. Antes de dar el primer paso, mira atrás y ve todo lo que ha vivido: 
+                el viento que la llamó, el miedo del mar, la pérdida, la paz y ese primer recuerdo que por fin fue suyo. <br />
+                En silencio murmura: “Solo los humanos son capaces de resistir tanto… 
+                de mantenerse enteros mientras el mundo los parte.”
+            </div>
+
+            <div class="abajo">
+                Apenas esas palabras dejan su boca, 
+                su cuerpo comienza a deformarse. <br />
+                La luz que alguna vez la mantuvo unida se escapa en hilos inestables, 
+                filtrándose por pequeñas grietas que aparecen en su piel recién formada. <br /><br />
+                Las líneas de luz tiemblan, 
+                como si algo dentro de ella estuviera a punto de romperse.
+            </div>
+        </section>
+
+        <!-- PÁRRAFO 13 -->
+        <section class="section">
+            <video src="assets/trece.mp4" autoplay muted loop playsinline></video>
+
+            <div class="arriba">
+                La luz se acumula en su interior, buscando salida, <br />
+                hasta que en un estallido silencioso su cuerpo se disuelve por completo. <br />
+                Se libera. <br />
+            </div>
+
+            <div class="abajo">
+                Todo lo que alguna vez fue se convierte en viento, 
+                el mismo que alguna vez la guió por el mundo. <br />
+                Y al final solo queda un pequeño orbe de luz flotando en el aire. <br />
+                Un nuevo recuerdo. <br />
+                La única memoria que será suya por toda la eternidad.
+            </div>
+        </section>
+
+    <!-- PÁRRAFO 14 -->
+        <section class="section">
+            <video src="assets/catorce.mp4" autoplay muted loop playsinline></video>
+        </section>
+
+ <section class="pagina-antes">
+    <div id="anim-antes"></div>
+</section>
+
+<script src="sketch-image.js"></script>
+
+<section class="pagina-final">
+    <div id="anim-final"></div>
+</section>
+
+<script src="sketch-final.js"></script>
+
+
+        <!--CRÉDITOS -->
+        <div id="creditsModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+
+                <h2>¿Quiénes hicieron posible esta experiencia?</h2>
+
+                <div class="creditos-grid">
+                    <div class="persona">
+                        <h3>Catalina Montoya</h3>
+                        <p>Programación</p>
+                    </div>
+
+                    <div class="persona">
+                        <h3>Isabella Uribe</h3>
+                        <p>Diseño gráfico</p>
+                    </div>
+
+                    <div class="persona">
+                        <h3>Maria Goyes</h3>
+                        <p>Diseño gráfico</p>
+                    </div>
+
+                    <div class="persona">
+                        <h3>Adriano Bernal</h3>
+                        <p>Storytelling</p>
+                    </div>
+
+                    <div class="persona">
+                        <h3>Valentina Ocampo</h3>
+                        <p>Asistente de producción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+    <script src="sketch-titulo.js"></script>
+
+    <script>
+        new p5(tituloSketch, "anim-titulo");
+    </script>
+
+    <script>
+        const modal = document.getElementById("creditsModal");
+        const openBtn = document.getElementById("openModal");
+        const closeBtn = document.getElementById("closeModal");
+
+        openBtn.onclick = () => modal.style.display = "block";
+        closeBtn.onclick = () => modal.style.display = "none";
+
+        window.onclick = (e) => {
+            if (e.target === modal) modal.style.display = "none";
+        };
+    </script>
+
+    <script>
+    const btn = document.getElementById("music-btn");
+    const music = document.getElementById("music");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+        if (!isPlaying) {
+            music.play();
+            btn.classList.add("playing");
+            isPlaying = true;
+        } else {
+            music.pause();
+            btn.classList.remove("playing");
+            isPlaying = false;
+        }
+    });
+</script>
+<div id="seamlessOverlay" aria-hidden="true"></div>
+<script>
+(function () {
+  const EDGE_MARGIN = 6; 
+  const FADE_MS = 420;   
+  const overlay = document.getElementById('seamlessOverlay');
+  let animating = false;
+  let isTouching = false;
+
+  function atBottom() {
+    return (window.innerHeight + window.scrollY) >= (document.body.scrollHeight - EDGE_MARGIN);
+  }
+  function atTop() {
+    return window.scrollY <= EDGE_MARGIN;
+  }
+
+  function cover(callback) {
+    animating = true;
+    overlay.style.pointerEvents = 'auto';
+    overlay.style.opacity = '1';
+    setTimeout(() => { if (callback) callback(); }, FADE_MS);
+  }
+
+  function uncover(callback) {
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+      overlay.style.pointerEvents = 'none';
+      animating = false;
+      if (callback) callback();
+    }, FADE_MS);
+  }
+
+  function seamlessJump(direction) {
+    if (animating) return;
+    cover(() => {
+      if (direction === 'down') {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); 
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      } else {
+        const bottom = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        window.scrollTo({ top: bottom, left: 0, behavior: 'instant' });
+        document.documentElement.scrollTop = bottom;
+        document.body.scrollTop = bottom;
+      }
+     
+      setTimeout(() => uncover(), 40);
+    });
+  }
+
+  
+  window.addEventListener('wheel', (e) => {
+    if (animating) {
+      e.preventDefault(); 
+      return;
+    }
+    
+    if (atBottom() && e.deltaY > 0) {
+      e.preventDefault();
+      seamlessJump('down');
+    }
+    
+    if (atTop() && e.deltaY < 0) {
+      e.preventDefault();
+      seamlessJump('up');
+    }
+  }, { passive: false });
+
+  
+  let lastTouchY = 0;
+  window.addEventListener('touchstart', (e) => {
+    isTouching = true;
+    lastTouchY = e.touches[0].clientY;
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (!isTouching || animating) return;
+    const y = e.touches[0].clientY;
+    const dy = lastTouchY - y; 
+    lastTouchY = y;
+
+    if (atBottom() && dy > 30) { 
+      seamlessJump('down');
+      isTouching = false;
+    } else if (atTop() && dy < -30) { 
+      seamlessJump('up');
+      isTouching = false;
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => { isTouching = false; });
+
+  window.addEventListener('keydown', (e) => {
+    if (animating) { e.preventDefault(); return; }
+    if (e.key === 'PageDown' && atBottom()) {
+      e.preventDefault(); seamlessJump('down');
+    } else if (e.key === 'PageUp' && atTop()) {
+      e.preventDefault(); seamlessJump('up');
+    } else if (e.key === 'End' && atBottom()) {
+      e.preventDefault(); seamlessJump('down');
+    } else if (e.key === 'Home' && atTop()) {
+      e.preventDefault(); seamlessJump('up');
+    }
+  });
+
+  window.addEventListener('resize', () => { /* no-op */ });
+
+})();
+</script>
+
+<script>
+(function(){
+  const elems = [
+    document.getElementById('titulo-wrapper'),
+    document.getElementById('titulo-humanidad'),
+    document.getElementById('subtitulo-humanidad')
+  ].filter(Boolean);
+
+  function forceVisible(el){
+    if(!el) return;
+   
+    el.style.display = 'block';
+    el.style.opacity = '1';
+    el.style.visibility = 'visible';
+    el.style.pointerEvents = '';
+   
+    el.classList.remove('hidden','invisible','fade-out');
+  }
+
+ 
+  elems.forEach(forceVisible);
+
+  const observer = new MutationObserver(muts => {
+    muts.forEach(m => {
+      if (m.type === 'attributes' && (m.attributeName === 'style' || m.attributeName === 'class')) {
+        elems.forEach(forceVisible);
+      }
+    });
+  });
+
+  elems.forEach(el => observer.observe(el, { attributes: true, attributeFilter: ['style','class'] }));
+
+  console.log('Patch activo: título y subtítulo forzados visibles.');
+})();
+</script>
+
+
+</body>
+</html>

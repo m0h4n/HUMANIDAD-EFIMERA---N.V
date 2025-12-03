@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Humanidad efímera</title>
-
     <meta
       name="description"
       content="Proyecto multimedia que integra contenido poético con animación en p5.js, video sintético generado por IA y diseño web responsivo para una experiencia inmersiva."
@@ -14,42 +13,39 @@
     <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg?v=7" />
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Librerías de p5 -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+    <!-- Librerías p5.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"
+      defer
+    ></script>
   </head>
 
   <body>
-    <!-- ============BUTTON MUSIC================ -->
+    <!-- ===== BOTÓN MÚSICA ===== -->
     <button id="music-btn" class="music-btn">♪</button>
-
     <audio id="music" loop>
       <source src="assets/music.mp3" type="audio/mp3" />
     </audio>
 
-    <!-- ===================== TÍTULO ===================== -->
+    <!-- ===== TÍTULO ===== -->
     <section class="pagina-titulo" id="pagina-titulo">
-      <!-- BOTÓN "i" -->
       <button id="openModal" class="info-btn">i</button>
-
       <div id="anim-titulo"></div>
-
       <div id="titulo-wrapper" aria-hidden="false">
-        <h1 id="titulo-humanidad">
-          <a href="#historia">HUMANIDAD EFÍMERA</a>
-        </h1>
-
+        <h1 id="titulo-humanidad"><a href="#historia">HUMANIDAD EFÍMERA</a></h1>
         <div id="subtitulo-humanidad">
           SUMÉRGETE EN LA HISTORIA <br />
           Y DÉJATE LLEVAR POR EL VIENTO
         </div>
       </div>
-
-      <!-- flecha scroll -->
       <div class="scroll-down" aria-hidden="true"></div>
     </section>
 
-    <!-- ===================== HISTORIA ===================== -->
+    <!-- ===== HISTORIA ===== -->
     <div class="scroll-container" id="historia">
       <!-- PÁRRAFO 1 -->
       <section class="section">
@@ -61,7 +57,6 @@
           Durante siglos, no supieron expresar sus sentimientos, <br />
           y estos brotaron como manantiales hacia el mundo que los rodeaba.
         </div>
-
         <div class="abajo">
           Pero durante siglos, el mundo los escuchó y se impregnó de aquello que
           callaban. <br />
@@ -79,7 +74,6 @@
           un grito ahogado; en una estación abandonada, una despedida que nunca
           tuvo respuesta.
         </div>
-
         <div class="abajo">
           Sin darse cuenta, empieza a guardar todo eso dentro de sí. <br />
           Cuando intenta entenderlo, el peso de tantos recuerdos humanos casi lo
@@ -97,7 +91,6 @@
           sus láminas. <br />
           Una voz sin cuerpo tararea y se deja llevar.
         </div>
-
         <div class="abajo">
           Suspendido sobre los árboles y arrastrado por el viento, llega a unas
           ruinas cubiertas de musgo. <br />
@@ -116,7 +109,6 @@
           El ser sin cuerpo se inclina, queriendo entender, sin saber que esa
           curiosidad empezará a cambiarlo.
         </div>
-
         <div class="abajo">
           Una ráfaga de viento lo arrastra lejos del destello. <br />
           En el aire, la luz que guardó empieza a unirse con él, como si buscara
@@ -136,7 +128,6 @@
           Por un instante reconoce esa sensación… pero esta se quiebra. Desde el
           mar llega un frío seco que la atraviesa.
         </div>
-
         <div class="abajo">
           “Así que esto es el miedo”, murmura, mirando el oleaje avanzar y
           retroceder. <br />
@@ -169,7 +160,6 @@
           Un recuerdo hundido hasta estas profundidades despierta a su
           alrededor.
         </div>
-
         <div class="abajo">
           Voces rotas, lloros, respiraciones entrecortadas… todo vibra como si
           el mar las hubiera guardado durante siglos.<br />
@@ -200,7 +190,6 @@
           El bosque se vuelve más denso; los troncos se alzan como pilares de un
           templo antiguo.
         </div>
-
         <div class="abajo">
           Entonces encuentra un claro. <br />
           Un espacio pequeño, escondido, donde la luz apenas toca el suelo.
@@ -229,7 +218,6 @@
           Decide caminar por su cuenta; ya no está siendo guiada. En la cima de
           la montaña, observa el pastizal donde todo comenzó.
         </div>
-
         <div class="abajo">
           Es un recuerdo propio por primera vez: un simple alivio al reconocer
           que ya ha estado allí antes. <br />
@@ -248,7 +236,6 @@
           En silencio murmura: “Solo los humanos son capaces de resistir tanto…
           de mantenerse enteros mientras el mundo los parte.”
         </div>
-
         <div class="abajo">
           Apenas esas palabras dejan su boca, su cuerpo comienza a deformarse.
           <br />
@@ -264,11 +251,11 @@
       <section class="section">
         <video src="assets/trece.mp4" autoplay muted loop playsinline></video>
         <div class="arriba">
-          La luz se acumula en su interior, buscando salida, hasta que en un
-          estallido silencioso su cuerpo se disuelve por completo. <br />
+          La luz se acumula en su interior, buscando salida, <br />
+          hasta que en un estallido silencioso su cuerpo se disuelve por
+          completo. <br />
           Se libera.
         </div>
-
         <div class="abajo">
           Todo lo que alguna vez fue se convierte en viento, el mismo que alguna
           vez la guió por el mundo. <br />
@@ -284,50 +271,39 @@
         <video src="assets/catorce.mp4" autoplay muted loop playsinline></video>
       </section>
     </div>
-    <!-- Fin contenedor historia -->
 
-    <!-- ANTES -->
+    <!-- ===== ANTES ===== -->
     <section class="pagina-antes">
       <div id="anim-antes"></div>
     </section>
 
-    <script src="sketch-image.js"></script>
-
-    <!-- FINAL -->
+    <!-- ===== FINAL ===== -->
     <section class="pagina-final">
       <div id="anim-final"></div>
     </section>
 
-    <script src="sketch-final.js"></script>
-
-    <!--CRÉDITOS -->
+    <!-- ===== CRÉDITOS ===== -->
     <div id="creditsModal" class="modal">
       <div class="modal-content">
         <span id="closeModal" class="close">&times;</span>
-
         <h2>¿Quiénes hicieron posible esta experiencia?</h2>
-
         <div class="creditos-grid">
           <div class="persona">
             <h3>Catalina Montoya</h3>
             <p>Programación</p>
           </div>
-
           <div class="persona">
             <h3>Isabella Uribe</h3>
             <p>Diseño gráfico</p>
           </div>
-
           <div class="persona">
             <h3>Maria Goyes</h3>
             <p>Diseño gráfico</p>
           </div>
-
           <div class="persona">
             <h3>Adriano Bernal</h3>
             <p>Storytelling</p>
           </div>
-
           <div class="persona">
             <h3>Valentina Ocampo</h3>
             <p>Asistente de producción</p>
@@ -336,140 +312,65 @@
       </div>
     </div>
 
-    <script src="sketch-titulo.js"></script>
+    <!-- ===== SCRIPTS DE SKETCHES ===== -->
+    <script src="sketch-image.js" defer></script>
+    <script src="sketch-final.js" defer></script>
+    <script src="sketch-titulo.js" defer></script>
 
-    <script>
-      new p5(tituloSketch, "anim-titulo");
-    </script>
+    <!-- ===== INICIALIZACIÓN P5, MODAL Y MÚSICA ===== -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        new p5(tituloSketch, "anim-titulo");
 
-    <!-- MODAL -->
-    <script>
-      const modal = document.getElementById("creditsModal");
-      const openBtn = document.getElementById("openModal");
-      const closeBtn = document.getElementById("closeModal");
+        // Modal créditos
+        const modal = document.getElementById("creditsModal");
+        const openBtn = document.getElementById("openModal");
+        const closeBtn = document.getElementById("closeModal");
 
-      openBtn.onclick = () => (modal.style.display = "block");
-      closeBtn.onclick = () => (modal.style.display = "none");
+        openBtn.onclick = () => (modal.style.display = "block");
+        closeBtn.onclick = () => (modal.style.display = "none");
+        window.onclick = (e) => {
+          if (e.target === modal) modal.style.display = "none";
+        };
 
-      window.onclick = (e) => {
-        if (e.target === modal) modal.style.display = "none";
-      };
-    </script>
-
-    <!-- MÚSICA -->
-    <script>
-      const btn = document.getElementById("music-btn");
-      const music = document.getElementById("music");
-
-      let isPlaying = false;
-
-      btn.addEventListener("click", () => {
-        if (!isPlaying) {
-          music.play();
-          btn.classList.add("playing");
-          isPlaying = true;
-        } else {
-          music.pause();
-          btn.classList.remove("playing");
-          isPlaying = false;
-        }
+        // Botón música
+        const btn = document.getElementById("music-btn");
+        const music = document.getElementById("music");
+        let isPlaying = false;
+        btn.addEventListener("click", () => {
+          if (!isPlaying) {
+            music.play();
+            btn.classList.add("playing");
+            isPlaying = true;
+          } else {
+            music.pause();
+            btn.classList.remove("playing");
+            isPlaying = false;
+          }
+        });
       });
     </script>
 
-    <!-- SCROLL SEAMLESS -->
-    <script>
-      (function () {
-        const EDGE_MARGIN = 6;
-        const FADE_MS = 420;
-        const overlay = document.getElementById("seamlessOverlay");
-        let animating = false;
-        let isTouching = false;
+    <!-- ===== SCROLL SEAMLESS ===== -->
+    <script src="overlay-scroll.js" defer></script>
 
-        function atBottom() {
-          return (
-            window.innerHeight + window.scrollY >=
-            document.body.scrollHeight - EDGE_MARGIN
-          );
-        }
-        function atTop() {
-          return window.scrollY <= EDGE_MARGIN;
-        }
-
-        function cover(callback) {
-          animating = true;
-          overlay.style.pointerEvents = "auto";
-          overlay.style.opacity = "1";
-          setTimeout(() => {
-            if (callback) callback();
-          }, FADE_MS);
-        }
-
-        function uncover(callback) {
-          overlay.style.opacity = "0";
-          setTimeout(() => {
-            overlay.style.pointerEvents = "none";
-            animating = false;
-            if (callback) callback();
-          }, FADE_MS);
-        }
-
-        function seamlessJump(direction) {
-          if (animating) return;
-          cover(() => {
-            if (direction === "down") {
-              window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-            } else {
-              const bottom = Math.max(
-                document.body.scrollHeight,
-                document.documentElement.scrollHeight
-              );
-              window.scrollTo({ top: bottom, left: 0, behavior: "instant" });
-            }
-            setTimeout(() => uncover(), 40);
-          });
-        }
-
-        window.addEventListener(
-          "wheel",
-          (e) => {
-            if (animating) {
-              e.preventDefault();
-              return;
-            }
-            if (atBottom() && e.deltaY > 0) {
-              e.preventDefault();
-              seamlessJump("down");
-            }
-            if (atTop() && e.deltaY < 0) {
-              e.preventDefault();
-              seamlessJump("up");
-            }
-          },
-          { passive: false }
-        );
-      })();
-    </script>
-
-    <!-- TÍTULO / SUBTÍTULO PATCH -->
-    <script>
-      (function () {
+    <!-- ===== PATCH VISIBILIDAD TÍTULO ===== -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
         const elems = [
           document.getElementById("titulo-wrapper"),
           document.getElementById("titulo-humanidad"),
           document.getElementById("subtitulo-humanidad"),
         ].filter(Boolean);
 
-        function forceVisible(el) {
-          if (!el) return;
+        elems.forEach((el) => {
           el.style.display = "block";
           el.style.opacity = "1";
           el.style.visibility = "visible";
           el.style.pointerEvents = "";
           el.classList.remove("hidden", "invisible", "fade-out");
-        }
-
-        elems.forEach(forceVisible);
-      })();
+        });
+      });
     </script>
 
     <div id="seamlessOverlay" aria-hidden="true"></div>
